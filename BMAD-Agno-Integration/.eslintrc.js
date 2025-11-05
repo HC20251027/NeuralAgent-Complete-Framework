@@ -1,0 +1,70 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
+  extends: [
+    'eslint:recommended',
+    '@typescript-eslint/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: [
+    '@typescript-eslint',
+  ],
+  rules: {
+    'indent': ['error', 2],
+    'linebreak-style': ['error', 'unix'],
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'always'],
+    'no-unused-vars': ['error', { 'argsIgnorePattern': '^_' }],
+    'no-console': ['warn'],
+    'prefer-const': ['error'],
+    'no-var': ['error'],
+    'object-shorthand': ['error'],
+    'prefer-template': ['error'],
+    'template-curly-spacing': ['error', 'never'],
+    'comma-dangle': ['error', 'always-multiline'],
+    'space-before-function-paren': ['error', 'always'],
+    'keyword-spacing': ['error'],
+    'space-infix-ops': ['error'],
+    'eol-last': ['error', 'always'],
+    'no-trailing-spaces': ['error'],
+    'no-multiple-empty-lines': ['error', { 'max': 2, 'maxEOF': 1 }],
+    'max-len': ['error', { 'code': 100, 'ignoreComments': true }],
+    'camelcase': ['error'],
+    'no-duplicate-imports': ['error'],
+    'no-unused-expressions': ['error'],
+    'consistent-return': ['error'],
+    'eqeqeq': ['error', 'always'],
+    'no-eval': ['error'],
+    'no-implied-eval': ['error'],
+    'no-new-func': ['error'],
+    'no-script-url': ['error'],
+  },
+  overrides: [
+    {
+      files: ['*.test.js', '*.spec.js'],
+      env: {
+        jest: true,
+      },
+    },
+    {
+      files: ['src/**/*.js'],
+      parserOptions: {
+        sourceType: 'module',
+      },
+    },
+  ],
+  ignorePatterns: [
+    'node_modules/',
+    'dist/',
+    'build/',
+    'coverage/',
+    '*.min.js',
+  ],
+};

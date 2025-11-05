@@ -1,0 +1,62 @@
+# AI智能体框架核心依赖
+requests>=2.31.0
+numpy>=1.24.0
+pandas>=2.0.0
+python-dotenv>=1.0.0
+pyyaml>=6.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# 数据库相关
+psycopg2-binary>=2.9.0
+sqlalchemy>=2.0.0
+alembic>=1.12.0
+pgvector>=0.2.0
+
+# 向量数据库
+faiss-cpu>=1.7.0
+chromadb>=0.4.0
+
+# 机器学习相关
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0
+sentence-transformers>=2.2.0
+
+# 视觉处理
+opencv-python>=4.8.0
+pillow>=10.0.0
+scikit-image>=0.21.0
+pytesseract>=0.3.10
+mss>=9.0.1
+
+# 语音处理
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.11
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# 网页自动化
+selenium>=4.15.0
+beautifulsoup4>=4.12.0
+playwright>=1.40.0
+
+# 工具库
+click>=8.1.0
+rich>=13.7.0
+loguru>=0.7.0
+pydantic>=2.5.0
+httpx>=0.25.0
+websockets>=12.0
+
+# 开发工具
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.10.0
+flake8>=6.1.0
+mypy>=1.7.0
+pre-commit>=3.5.0
+
+# 监控和日志
+prometheus-client>=0.19.0
+structlog>=23.2.0
