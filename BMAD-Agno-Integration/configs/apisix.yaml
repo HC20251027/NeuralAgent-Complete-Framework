@@ -1,0 +1,144 @@
+# APISIX网关配置文件
+# 包含网关的核心配置参数
+
+# 主配置
+apisix:
+  node_listen: 9080          # APISIX监听端口
+  enable_admin_cors: true    # 启用Admin API跨域
+  enable_dev_mode: false     # 禁用开发模式
+  enable_reuseport: true     # 启用端口复用
+  enable_ipv6: false         # 禁用IPv6
+  
+  # 代理缓存配置
+  proxy_cache:
+    cache_ttl: 10            # 缓存TTL（秒）
+    zones:
+      - name: disk_cache_one
+        memory_size: 50      # 内存缓存大小（MB）
+        disk_size: 1         # 磁盘缓存大小（GB）
+        disk_path: /tmp/disk_cache_one
+        cache_levels: 1:2    # 缓存层级
+  
+  # 路由器配置
+  router:
+    http:
+      radixtree_host_uri: true
+  
+  # 代理配置
+  stream_proxy:
+    tcp:
+      - addr: 9100
+        proxy_protocol: true
+        upstream:
+          nodes:
+            "127.0.0.1:80": 1
+          type: roundrobin
+    udp:
+      - addr: 9200
+        proxy_protocol: true
+        upstream:
+          nodes:
+            "127.0.0.1:1194": 1
+          type: roundrobin
+  
+  # DNS解析器
+  dns_resolver:
+    - address: 127.0.0.1:53
+      addrs: ["127.0.0.1"]
+      port: 53
+
+# Nginx配置
+nginx_config:
+  error_log: /tmp/error.log
+  error_log_level: warn
+  worker_processes: auto
+  enable_reuseport: true
+  max_core_dumps_unlimited: true
+  enable_cpu_affinity: true
+  
+  # HTTP配置
+  http:
+    access_log: /tmp/access.log
+    keepalive_timeout: 60
+    client_header_timeout: 60
+    client_body_timeout: 60
+    send_timeout: 10
+    underscores_in_headers: on
+    real_ip_header: X-Real-IP
+    real_ip_from:
+      - 127.0.0.1
+      - unix:/
+
+# Admin API配置
+admin:
+  enable_admin_cors: true
+  allow_admin:
+    - 127.0.0.0/24
+    - 1.2.3.4/32
+  
+  # Admin API密钥
+  admin_key:
+    - name: admin
+      key: edd1c9f034335f136f87ad84b625c8f1
+      role: admin
+    - name: viewer
+      key: 4054f7cf07e344346f3dc3b8dac6901f
+      role: viewer
+  
+  secret: secret-key          # Admin API密钥
+  encrypt_key: orderinsider   # 加密密钥
+  token_expire: 7200          # Token过期时间（秒）
+
+# 插件配置
+plugins:
+  # 认证插件
+  - name: jwt-auth
+    priority: 1000
+  - name: key-auth
+    priority: 1000
+  - name: basic-auth
+    priority: 1000
+  
+  # 限流插件
+  - name: rate-limit
+    priority: 1000
+  - name: limit-conn
+    priority: 1000
+  - name: limit-count
+    priority: 1000
+  
+  # 重写插件
+  - name: proxy-rewrite
+    priority: 1000
+  - name: response-rewrite
+    priority: 1000
+  
+  # 验证插件
+  - name: request-validation
+    priority: 1000
+  
+  # 缓存插件
+  - name: proxy-cache
+    priority: 1000
+  
+  # 日志插件
+  - name: http-logger
+    priority: 1000
+  - name: file-logger
+    priority: 1000
+  
+  # 跨域插件
+  - name: cors
+    priority: 1000
+  
+  # 安全插件
+  - name: ip-restriction
+    priority: 1000
+  - name: referer-restriction
+    priority: 1000
+  
+  # 监控插件
+  - name: prometheus
+    priority: 1000
+  - name: node-status
+    priority: 1000

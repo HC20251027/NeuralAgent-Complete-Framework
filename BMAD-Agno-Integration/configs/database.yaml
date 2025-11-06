@@ -1,0 +1,49 @@
+# 数据库配置文件
+# 包含PostgreSQL + PgVector的完整配置
+
+# 数据库连接配置
+database:
+  host: localhost
+  port: 5432
+  database: ai_agents
+  user: postgres
+  password: ${DB_PASSWORD:-}
+  min_connections: 5
+  max_connections: 20
+  command_timeout: 60
+  connection_retry: 3
+  connection_retry_delay: 5
+
+# 向量数据库配置
+vector:
+  dimensions:
+    text: 1536      # OpenAI text-embedding-ada-002
+    image: 512      # 图像特征向量维度
+    audio: 128      # 音频特征向量维度
+    multimodal: 2048 # 多模态融合向量维度
+  
+  index_type: ivfflat
+  index_params:
+    lists: 100
+  
+  similarity_threshold: 0.7
+  max_results: 10
+
+# 备份配置
+backup:
+  backup_dir: backups
+  max_backup_age_days: 30
+  auto_backup: true
+  backup_schedule: daily
+
+# 迁移配置
+migration:
+  migrations_dir: migrations
+  backup_before_migration: true
+
+# 监控配置
+monitoring:
+  enable_metrics: true
+  log_slow_queries: true
+  slow_query_threshold: 1000  # 毫秒
+  connection_pool_monitoring: true
