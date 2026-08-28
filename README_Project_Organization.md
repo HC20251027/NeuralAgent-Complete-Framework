@@ -1,13 +1,4 @@
----
-AIGC:
-    ContentProducer: Minimax Agent AI
-    ContentPropagator: Minimax Agent AI
-    Label: AIGC
-    ProduceID: 731d65358117e5b0d19e2843a70a93a8
-    PropagateID: 731d65358117e5b0d19e2843a70a93a8
-    ReservedCode1: 3045022100a0d2e3d197e6eec90f177389afe36fac141562da4ac8bb9577d5fbd3284807ee0220093d950caa2d6eac3b8e92f81b109d8446a562d772d3851cf6e241b4d5e0b4db
-    ReservedCode2: 30450220649423462950141c7bdd423779731f8cfa6d70e2a883e7ba0c7ba05c56b2309a0221009ae8e49789d0ca107169eab90b86c5f66023cdad170c84630eae5552808fc336
----
+
 
 # NeuralAgent × Agno-BMAD 融合框架 - 项目整理说明
 
