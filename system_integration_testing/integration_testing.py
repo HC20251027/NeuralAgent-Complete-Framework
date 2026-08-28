@@ -8,7 +8,7 @@
 - 测试报告生成
 - 性能测试
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

@@ -14,7 +14,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 setup(
     name="bmad-agno-integration",
     version="1.0.0",
-    author="MiniMax Agent",
+    author="HC20251027",
     author_email="agent@minimax.com",
     description="全功能本地化AI智能体大整合框架",
     long_description=long_description,

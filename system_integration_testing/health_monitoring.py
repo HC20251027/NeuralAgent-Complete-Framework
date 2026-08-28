@@ -8,7 +8,7 @@
 - 性能指标收集
 - 告警机制
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

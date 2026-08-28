@@ -9,7 +9,7 @@ NeuralAgent × Agno-BMAD 融合框架 - 测试运行器
 - 演示测试
 - 性能基准测试
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

@@ -9,7 +9,7 @@
 - 说话人识别
 - 情感状态检测
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

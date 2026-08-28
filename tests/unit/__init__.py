@@ -8,7 +8,7 @@
 - 语音识别测试
 - 智能体功能测试
 
-Author: MiniMax Agent
+Author: HC20251027
 """
 
 import unittest

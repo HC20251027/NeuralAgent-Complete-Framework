@@ -8,7 +8,7 @@
 - 图像数据模拟
 - 数据库模拟数据
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

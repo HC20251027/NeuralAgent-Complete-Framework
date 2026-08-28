@@ -10,7 +10,7 @@
 
 与Agno-BMAD框架和NeuralAgent视觉模块深度集成。
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 
@@ -47,4 +47,4 @@ __all__ = [
 ]
 
 __version__ = '1.0.0'
-__author__ = 'MiniMax Agent'
+__author__ = 'HC20251027'

@@ -8,7 +8,7 @@
 - 最佳实践示例
 - 故障排除示例
 
-Author: MiniMax Agent
+Author: HC20251027
 """
 
 # 示例配置

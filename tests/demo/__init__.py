@@ -8,7 +8,7 @@
 - 用户接口演示
 - 框架使用文档
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 
@@ -25,4 +25,4 @@ __all__ = [
 ]
 
 __version__ = '1.0.0'
-__author__ = 'MiniMax Agent'
+__author__ = 'HC20251027'

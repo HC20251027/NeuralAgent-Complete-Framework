@@ -6,7 +6,7 @@ NeuralAgent × Agno-BMAD-LM Studio 融合架构 - 完整核心框架
 全功能本地化AI智能体大整合方案的核心实现
 包含所有核心模块的统一框架
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 Version: 1.0.0
 """

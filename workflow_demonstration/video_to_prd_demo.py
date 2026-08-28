@@ -8,7 +8,7 @@
 3. 关键信息提取
 4. PRD文档生成
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

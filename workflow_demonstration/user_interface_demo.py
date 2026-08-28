@@ -8,7 +8,7 @@
 3. API接口演示
 4. 集成接口演示
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

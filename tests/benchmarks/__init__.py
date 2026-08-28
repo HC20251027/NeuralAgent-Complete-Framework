@@ -8,7 +8,7 @@
 - 内存使用测试
 - 并发性能测试
 
-Author: MiniMax Agent
+Author: HC20251027
 """
 
 import time

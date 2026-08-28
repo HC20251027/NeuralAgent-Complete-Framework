@@ -9,7 +9,7 @@
 - 语音命令处理
 - 对话管理
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

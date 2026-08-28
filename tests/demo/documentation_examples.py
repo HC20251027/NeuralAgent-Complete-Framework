@@ -9,7 +9,7 @@
 4. 最佳实践
 5. 故障排除
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

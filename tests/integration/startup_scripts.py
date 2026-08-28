@@ -8,7 +8,7 @@
 - 依赖验证
 - 配置管理
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

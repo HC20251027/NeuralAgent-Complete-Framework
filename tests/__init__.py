@@ -9,7 +9,7 @@ NeuralAgent × Agno-BMAD 融合框架 - 测试套件
 - 示例代码 (examples/)
 - 性能测试 (benchmarks/)
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 Version: 1.0.0
 """
@@ -21,7 +21,7 @@ from .examples import *
 from .benchmarks import *
 
 __version__ = '1.0.0'
-__author__ = 'MiniMax Agent'
+__author__ = 'HC20251027'
 
 # 测试配置
 TEST_CONFIG = {

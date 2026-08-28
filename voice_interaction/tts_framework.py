@@ -9,7 +9,7 @@
 - Coqui TTS (开源TTS)
 - Azure Cognitive Services TTS
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

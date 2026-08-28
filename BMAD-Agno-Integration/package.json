@@ -57,7 +57,7 @@
     "local",
     "offline"
   ],
-  "author": "MiniMax Agent",
+  "author": "HC20251027",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0",

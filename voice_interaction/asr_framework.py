@@ -8,7 +8,7 @@
 - Faster Whisper (优化版本)
 - 本地VAD (Voice Activity Detection)
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 

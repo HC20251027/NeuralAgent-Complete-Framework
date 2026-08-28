@@ -7,7 +7,7 @@
 2. 并行协作模式 (Parallel Collaboration)  
 3. 混合协作模式 (Hybrid Collaboration)
 
-Author: MiniMax Agent
+Author: HC20251027
 Date: 2025-11-06
 """
 
