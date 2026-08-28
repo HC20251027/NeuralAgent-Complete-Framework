@@ -3,73 +3,17 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "项目环境准备与框架代码结构",
-        "details": "1. 创建项目目录结构 D:\\BMAD-Agno-Integration\\{agno,bmad,apisix,tools,code}\n2. 创建Python/Node.js项目基础框架\n3. 准备开发依赖和配置文件模板\n4. 建立代码规范和项目结构",
+        "content": "整理所有核心代码到一个统一文件",
+        "details": "将所有模块的核心功能整合到一个综合文件中，包括：数据库框架、APISIX网关、Agno多智能体、BMAD-METHOD、NeuralAgent视觉、语音交互、系统集成等",
         "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "数据库服务框架代码开发",
-        "details": "1. 开发PostgreSQL + PgVector数据库连接代码\n2. 创建数据库初始化脚本\n3. 开发向量数据库操作接口\n4. 创建数据库配置管理模块",
+        "content": "整理所有测试文件到tests文件夹",
+        "details": "收集并整理所有测试相关文件到统一的tests目录，包括单元测试、集成测试、演示代码等",
         "status": "completed",
         "priority": "high"
-      },
-      "3": {
-        "id": "3",
-        "content": "APISIX网关框架开发",
-        "details": "1. 开发APISIX网关配置文件模板\n2. 创建服务路由管理代码\n3. 开发插件配置管理模块\n4. 创建网关通信接口代码",
-        "status": "completed",
-        "priority": "high"
-      },
-      "4": {
-        "id": "4",
-        "content": "Agno多智能体框架开发",
-        "details": "1. 开发Agno框架集成代码\n2. 创建多智能体调度系统\n3. 开发记忆系统接口\n4. 创建任务流编排引擎",
-        "status": "completed",
-        "priority": "high"
-      },
-      "5": {
-        "id": "5",
-        "content": "BMAD-METHOD框架开发",
-        "details": "1. 开发BMAD框架集成代码\n2. 创建5个角色代理框架 (analyst, pm, architect, dev, qa)\n3. 开发敏捷开发流程引擎\n4. 创建代理间通信接口",
-        "status": "completed",
-        "priority": "medium"
-      },
-      "6": {
-        "id": "6",
-        "content": "Agno-BMAD集成框架开发",
-        "details": "1. 开发角色映射系统代码\n2. 创建任务流编排集成\n3. 开发记忆系统同步机制\n4. 创建代理注册管理接口",
-        "status": "completed",
-        "priority": "medium"
-      },
-      "7": {
-        "id": "7",
-        "content": "NeuralAgent视觉模块框架开发",
-        "details": "1. 开发三种视觉路线框架代码\n2. 创建UI元素识别接口\n3. 开发颜色检测和轮廓识别模块\n4. 创建OmniParser集成接口",
-        "status": "completed",
-        "priority": "medium"
-      },
-      "8": {
-        "id": "8",
-        "content": "语音交互系统框架开发",
-        "details": "1. 开发语音识别(ASR)框架\n2. 开发语音合成(TTS)框架\n3. 开发声纹识别和情感分析模块\n4. 创建语音交互控制接口",
-        "status": "completed",
-        "priority": "medium"
-      },
-      "9": {
-        "id": "9",
-        "content": "系统集成与测试框架",
-        "details": "1. 开发一键启动脚本模板\n2. 创建集成测试框架代码\n3. 开发系统健康检查模块\n4. 创建模拟数据测试接口",
-        "status": "completed",
-        "priority": "low"
-      },
-      "10": {
-        "id": "10",
-        "content": "完整工作流演示代码",
-        "details": "1. 开发视频到PRD自动生成演示代码\n2. 实现三种协作模式示例代码\n3. 创建用户接口演示\n4. 编写框架使用文档和示例",
-        "status": "completed",
-        "priority": "low"
       }
     }
   }
